@@ -1,9 +1,22 @@
 import React, {useState, useEffect} from 'react'
 
-const Header = () => {
+const Header = (props) => {
     const [hover, setHover] = useState(null)
+    const [top, setTop] = useState(true)
+
+    useEffect(() => {
+        setInterval(() => {
+            
+            if(window.scrollY>199){
+                setTop(false)
+            }else{
+                setTop(true)
+            }
+        }, 200);
+        
+    }, [])
     return (
-        <div className="header">
+        <div className={`${top===true?"header":"bottom-header"}`}>
             <h1 className="title">DISCO <br/> BOOTH</h1>
             <div className="links">
                 <div className="link" onMouseEnter={()=>setHover('home')} onMouseLeave={()=>setHover(null)}>Home <div className={hover==='home'?"line":'hide-line'}></div></div>

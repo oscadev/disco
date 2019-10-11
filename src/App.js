@@ -5,11 +5,12 @@ import Header from './header';
 import Panel1 from './panel1';
 import Video from './video';
 import Panel2 from './panel2';
+import Marquee from './marquee';
 
 
 
 function App() {
-  const thresh = .5
+  
   return (
     <div className="App">
      <Header/>
@@ -40,8 +41,9 @@ function App() {
      pic1="https://cdn.shopify.com/s/files/1/0187/3877/4067/files/Screen_Shot_2019-10-01_at_12.11.11_AM_360x.png?v=1569913972"
      pic2="https://cdn.shopify.com/s/files/1/0187/3877/4067/files/Screen_Shot_2019-10-01_at_12.11.20_AM_360x.png?v=1569913952"
      />
+     <Marquee/>
      
-                    <div className="panel2-title">@DISCOBOOTH</div>
+                    <div className="panel2-title" style={{marginTop:'400px'}}>@DISCOBOOTH</div>
                     <div className="panel2-body">Send us yours <u>@youraccount</u></div>
     <Panel2/>
                 

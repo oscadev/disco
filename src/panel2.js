@@ -4,7 +4,7 @@ import { InView } from 'react-intersection-observer'
 const Panel2 = (props) => {
     if(props.flip){
         return (
-            <InView threshold='.8'>
+            <InView threshold='.2'>
                 {({ inView, ref, entry }) => (
                     <div className={`panel2 ${inView?'slide-in':'slide-out'}`} ref={ref}>
                         <div className="panel2-pics-box">

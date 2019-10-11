@@ -282,7 +282,7 @@ z-index: 5;
   position: absolute;
 }
 .marquee2{
-  transform: translateX(210%);
+  transform: translateX(200vw);
   /* width: 100%; */
   height: 200px;
   animation: scroll 8000ms linear infinite;
